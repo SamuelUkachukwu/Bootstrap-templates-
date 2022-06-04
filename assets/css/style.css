@@ -102,7 +102,7 @@ p {
     color: var(--white);
     margin-bottom: 10px;
     width: 20rem;
-    height: 27vh;
+    height: 26.5vh;
     position: relative;
     border-radius: 2px;
     font-size: 13px;
@@ -114,7 +114,9 @@ p {
     overflow: hidden;
     border-radius: 2px;
 }
-
+.card-body{
+    padding: 10px;
+}
 .card-body,
 .txt-back-drop {
     position: absolute;
@@ -128,6 +130,7 @@ p {
     border-radius: 0px 0px 2px 2px;
     background: rgba(0, 0, 0, 0.5);
 }
+
 
 /* ------------------article posts styling */
 article {
@@ -172,6 +175,12 @@ article {
     display: flex;
     margin-right: 10px;
     justify-content: space-around;
+}
+
+/* ---------------------------coppyright styling */
+.copyright{
+    font-size: 12px;
+    text-align: center;
 }
 
 /*------------------------- media screen styling */
