@@ -279,7 +279,7 @@ article {
 /*------------------------- media screen styling */
 @media screen and (max-width: 992px) {
     .col-lg-8 {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .col-lg-4,
@@ -287,13 +287,26 @@ article {
         display: none;
     }
 }
+
 /*-------------------------- profile page styling */
-.sidebar {
-    background-color: red;
-    height: 70vh;
+
+button{
+    width: 100%;
+}
+.col-md-9{
+background-color: pink;
 }
 
-.layout-main {
-    background-color: limegreen;
-    height: 70vh;
+.avatar {
+    width:100%;
+    background-color: #D92525;
+}
+
+@media screen and (max-width: 768px) {
+   .avatar{
+       width: 30%;
+   }
+   .profile{
+       display: flex;
+   }
 }
