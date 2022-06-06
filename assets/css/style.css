@@ -264,11 +264,12 @@ article {
     border-radius: 100%;
 }
 
-.text-style{
+.text-style {
     color: var(--white);
     font-weight: bolder;
     letter-spacing: 1.2px;
 }
+
 /* ---------------------------coppyright styling */
 .copyright {
     font-size: 12px;
@@ -285,4 +286,14 @@ article {
     .author-info {
         display: none;
     }
+}
+/*-------------------------- profile page styling */
+.sidebar {
+    background-color: red;
+    height: 70vh;
+}
+
+.layout-main {
+    background-color: limegreen;
+    height: 70vh;
 }
