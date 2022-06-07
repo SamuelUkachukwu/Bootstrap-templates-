@@ -8,15 +8,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>{{Profile}}-StoryTeller</title>
+  <title>{{Profile public}}-StoryTeller</title>
 </head>
 
 <body>
   <!-- Responsive navbar-->
   <nav class="navbar" id="nav-bar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <!-- <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
+      <a class="navbar-brand" href="index.html">
         <span class="logo1">story</span><span class="logo2">TELLER </span><i class="fas fa-pen-alt"></i>
       </a>
       <ul class="nav">
@@ -34,23 +33,31 @@
 
   <div class="container-md">
     <div class="row mt-5">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="profile">
           <div class="avatar">
             <img class="avatar-img img-fluid border border-3" style="width: 100%; object-fit: cover;"
               src="assets/images/logo2.png" alt="profile image">
           </div>
           <div class="name-field padding d-flex align-items-center justify-content-center">
-            <h1 class="profile-name fs-5">UkachukwuSamuel</h1>
+            <h1 class="profile-name mt-3 fs-5">UkachukwuSamuel</h1>
           </div>
         </div>
-        <button id="edit-btn" class="p-1 mt-3 rounded-pill bd-font">EDIT BUTTON</button>
+        <div class="mb-3">
+          <h1 class="bd-font fs-5">Bio:</h1>
+          <p class="bio padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolor alias suscipit aliquid consectetur ratione ab modi nostrum. Eaque consequatur, sequi ex reprehenderit repellat tempora quidem est aspernatur laudantium ipsa voluptatibus exercitationem magni ea accusamus sit modi libero odit distinctio atque dolorem quos dignissimos. Cupiditate vitae repellendus qui fugiat laboriosam.</p>
+          <div class=" bio mt-2 padding d-flex justify-content-center">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        </div>
       </div>
-      <div class="col-md-9">
+
+      <!-- stories submited by author -->
+      <div class="col-md-8">
         <div class="card mb-3">
           <div class="card-body">
             <h5 class="card-title bd-font">Kira The Last Dragon</h5>
-            <p class="card-text"> the last breatimg dragon Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="card-text"> The last breatimg dragon Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio, iste ut
               cumque perspiciatis ex autem rem possimus molestiae obcaecati ipsam.With supporting text below as a
               natural lead-in to additional content.</p>
@@ -61,8 +68,9 @@
         </div>
         <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title bd-font">Kira The Last Dragon</h5>
-            <p class="card-text"> the last breatimg dragon Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <h5 class="card-title bd-font">MICRO MEAXE: LOST COURSE</h5>
+            <p class="card-text"> Between space and time he fought for a destiny Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
               Distinctio, iste ut
               cumque perspiciatis ex autem rem possimus molestiae obcaecati ipsam.With supporting text below as a
               natural lead-in to additional content.</p>
@@ -73,10 +81,10 @@
         </div>
         <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title bd-font">Kira The Last Dragon</h5>
-            <p class="card-text"> the last breatimg dragon Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio, iste ut
-              cumque perspiciatis ex autem rem possimus molestiae obcaecati ipsam.With supporting text below as a
+            <h5 class="card-title bd-font">MUDOK IV LOST TO LIGHT</h5>
+            <p class="card-text"> Beyond the twilight galaxy Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, iste ut cumque perspiciatis ex autem rem possimus molestiae obcaecati ipsam. obcaecati
+              ipsam.With supporting text below as a
               natural lead-in to additional content.</p>
             <div class="padding">
               <a href="#" class="text-decoration-none bd-font"><i class="fab fa-readme"></i>...READ STORY</a>
@@ -86,6 +94,13 @@
       </div>
     </div>
   </div>
+
+  <!----------------------footer-->
+<footer class="copyright padding">
+  <p id="copyright-text">copyright &#169; <span class="logo1">story</span><span class="logo2">TELLER</span> &reg;
+    <span id="copy-right"></span>
+  </p>
+</footer>
   <!--------------javascripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

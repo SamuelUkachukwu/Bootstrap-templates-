@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>{{Profile private}}-StoryTeller</title>
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar" id="nav-bar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo1">story</span><span class="logo2">TELLER </span><i class="fas fa-pen-alt"></i>
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="view_post.html">Login</a>
+                </li>
+                <li class="nav-item call-to-atn">
+                    <a class="nav-link" href="#">Resgister</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---------------------- tmplate this section below--- -->
+
+    <div class="container-md">
+        <div class="row mt-5">
+            <div class="col-md-4 mb-2">
+                <div class="profile">
+                    <div class="avatar">
+                        <img class="avatar-img img-fluid border border-3" style="width: 100%; object-fit: cover;"
+                            src="assets/images/logo2.png" alt="profile image">
+                    </div>
+                    <div class="name-field padding d-flex align-items-center justify-content-center">
+                        <h1 class="profile-name fs-5">UkachukwuSamuel</h1>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h1 class="bd-font fs-5">Bio:</h1>
+                    <p class="bio padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolor alias
+                        suscipit aliquid consectetur ratione ab modi nostrum. Eaque consequatur, sequi ex reprehenderit
+                        repellat tempora quidem est aspernatur laudantium ipsa voluptatibus exercitationem magni ea
+                        accusamus sit modi libero odit distinctio atque dolorem quos dignissimos. Cupiditate vitae
+                        repellendus qui fugiat laboriosam.</p>
+                    <div class=" bio mt-2 padding d-flex justify-content-center">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <button id="edit-btn" class="p-1 mb-2 rounded-pill bd-font" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">EDIT PROFILE</button>
+
+                <!--------------collapsable -->
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div>
+                            <label class="bd-font" for="fname">First Name:</label>
+                            <input class="edt-input" id="fname" type="text" name="fname" placeholder="First Name">
+                        </div>
+                        <div>
+                            <label class="bd-font" for="lname">Last Name:</label>
+                            <input class="edt-input" id="lname" type="text" name="l_name" placeholder="Last Name">
+                        </div>
+                        <label class="bd-font" for="bio">Bio:</label>
+                        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About Me..."></textarea>
+                        image upload
+                        <label for="twitter"><i class="fab fa-twitter"></i></label>
+                        <input class="edt-input" type="text" name="twitter" placeholder="twiter handle @example">
+                        <button class="bd-font mb-3 mt-2 btn btn-success" type="submit">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- stories submited by author -->
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title bd-font">Kira The Last Dragon</h5>
+                        <p class="card-text"> The last breatimg dragon Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Distinctio, iste ut
+                            cumque perspiciatis ex autem rem possimus molestiae obcaecati ipsam.With supporting text
+                            below as a
+                            natural lead-in to additional content.</p>
+                        <div class="padding">
+                            <a href="#" class="text-decoration-none bd-font"><i class="fab fa-readme"></i>...READ
+                                STORY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title bd-font">MICRO MEAXE: LOST COURSE</h5>
+                        <p class="card-text"> Between space and time he fought for a destiny Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit.
+                            Distinctio, iste ut
+                            cumque perspiciatis ex autem rem possimus molestiae obcaecati ipsam.With supporting text
+                            below as a
+                            natural lead-in to additional content.</p>
+                        <div class="padding">
+                            <a href="#" class="text-decoration-none bd-font"><i class="fab fa-readme"></i>...READ
+                                STORY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title bd-font">MUDOK IV LOST TO LIGHT</h5>
+                        <p class="card-text"> Beyond the twilight galaxy Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Distinctio, iste ut cumque perspiciatis ex autem rem possimus molestiae obcaecati ipsam.
+                            obcaecati
+                            ipsam.With supporting text below as a
+                            natural lead-in to additional content.</p>
+                        <div class="padding">
+                            <a href="#" class="text-decoration-none bd-font"><i class="fab fa-readme"></i>...READ
+                                STORY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------footer-->
+<footer class="copyright padding">
+    <p id="copyright-text">copyright &#169; <span class="logo1">story</span><span class="logo2">TELLER</span> &reg;
+      <span id="copy-right"></span>
+    </p>
+  </footer>
+    <!--------------javascripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/0e95d75add.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

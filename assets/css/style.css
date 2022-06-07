@@ -268,36 +268,19 @@ article {
     letter-spacing: 1.2px;
 }
 
-/* ---------------------------coppyright styling */
-.copyright {
-    font-size: 12px;
-    text-align: center;
-}
-
-/*------------------------- media screen styling */
-@media screen and (max-width: 992px) {
-    .col-lg-8 {
-        /* width: 100%; */
-    }
-
-    .col-lg-4,
-    .author-info {
-        display: none;
-    }
-}
-
 /*-------------------------- profile page styling */
 
 button, .name-field{
     width: 100%;
 }
-.col-md-9{
-/* background-color: pink; */
+.bio{
+    background-color: var(--red-soft);
+    color: var(--white);
+    border-radius: 5px;
 }
-
 .avatar {
-    width:100%;
-    /* background-color: #D92525; */
+    width:70%;
+    margin: auto;
 }
 .avatar-img{
     border-radius: 50%;
@@ -307,6 +290,27 @@ button, .name-field{
     font-size: clamp(15px, 8vw, 20px);
     font-weight: bold;
 }
+.edt-input{
+    width: 100%;
+}
+/* ---------------------------coppyright styling */
+.copyright {
+    font-size: 12px;
+    background-color: var(--dark-blue);
+    text-align: center;
+    color: var(--white);
+}
+.copyright-text{
+    margin-right: 10px;
+}
+/*------------------------- media screen styling */
+@media screen and (max-width: 992px) {
+    .col-lg-4,
+    .author-info {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
    .avatar{
        width: 30%;
